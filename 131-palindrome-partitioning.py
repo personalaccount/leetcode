@@ -36,7 +36,11 @@ def partition(s):
             result.append(list(partition))
             return
         for i in range(start, len(s)):
-            if s[start:i+1] == s[start:i+1][::-1]:
+
+            subStr = s[start:i+1]
+            reversedSubStr = subStr[::-1]
+
+            if subStr == reversedSubStr:
                 partition.append(s[start:i+1])
                 backtrack(i+1, partition, result)
                 partition.pop()
@@ -44,5 +48,5 @@ def partition(s):
     backtrack(0, [], result)
     return result
 
-s = "aababa"
+s = "aab"
 print(partition(s))
