@@ -1,3 +1,4 @@
 # Solutions to LeetCode problems
 
-Problems descriptions are provided within each solution file
+Problem descriptions are provided within each solution file.
+The prefix number corresponds to the problem number on LeetCode.
